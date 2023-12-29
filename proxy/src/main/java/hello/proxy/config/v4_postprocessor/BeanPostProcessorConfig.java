@@ -22,7 +22,6 @@ public class BeanPostProcessorConfig {
 	public PackageLogTracePostProcessor logTracePostProcessor(LogTrace logTrace) {
 		return new PackageLogTracePostProcessor("hello.proxy.app", getAdvisor(logTrace));
 	}
-	// TODO: 빈 후처리기-정리부터
 
 	private Advisor getAdvisor(LogTrace logTrace) {
 		//pointcut
